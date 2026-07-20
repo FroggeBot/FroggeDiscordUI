@@ -1,0 +1,37 @@
+[project]
+name = "DiscordUI"
+version = "1.0.0"
+description = "Shared discord.py/py-cord rendering primitives used by both Bot and Worker, so a live posted Discord message with interactive Components V2 buttons can be built identically by whichever process needs to send it."
+readme = "README.md"
+authors = [
+    { name = "Stephanie Phillips", email = "stephanie@frogge.tech" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "py-cord>=2.8.0",
+    "schemas",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.24,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+schemas = { workspace = true }
+
+[tool.ruff]
+line-length = 150
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+files = ["src"]
