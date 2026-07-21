@@ -162,7 +162,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "py-cord", specifier = ">=2.8.0" },
-    { name = "schemas", git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.10" },
+    { name = "schemas", git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.16" },
 ]
 
 [package.metadata.requires-dev]
@@ -490,7 +490,7 @@ wheels = [
 [[package]]
 name = "schemas"
 version = "1.0.0"
-source = { git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.10#91016c674e564ba4ce715535561199b7cd279f2a" }
+source = { git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.16#e8fcfd684a184a4baa056801436d7bdba07fbd0a" }
 dependencies = [
     { name = "pydantic" },
     { name = "tzdata" },
