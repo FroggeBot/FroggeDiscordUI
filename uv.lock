@@ -162,7 +162,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "py-cord", specifier = ">=2.8.0" },
-    { name = "schemas", git = "https://github.com/FroggeBot/FroggeSchemas?branch=feature%2Freaction-role-post-requests" },
+    { name = "schemas", git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.10" },
 ]
 
 [package.metadata.requires-dev]
@@ -490,7 +490,7 @@ wheels = [
 [[package]]
 name = "schemas"
 version = "1.0.0"
-source = { git = "https://github.com/FroggeBot/FroggeSchemas?branch=feature%2Freaction-role-post-requests#a0b655e096159c2c45520d1760801c9293170c98" }
+source = { git = "https://github.com/FroggeBot/FroggeSchemas?tag=v0.1.10#91016c674e564ba4ce715535561199b7cd279f2a" }
 dependencies = [
     { name = "pydantic" },
     { name = "tzdata" },
